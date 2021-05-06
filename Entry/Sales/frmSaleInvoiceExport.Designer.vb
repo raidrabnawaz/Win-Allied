@@ -1,0 +1,1369 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmSaleInvoiceExport
+    Inherits WinBaseForms.GUIBaseFormA
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
+        Me.cmbGoodsDescription = New System.Windows.Forms.ComboBox()
+        Me.dtpLCDate = New System.Windows.Forms.DateTimePicker()
+        Me.cmbShipVia = New System.Windows.Forms.ComboBox()
+        Me.txtNetWeight = New System.Windows.Forms.TextBox()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.txtGrossWeight = New System.Windows.Forms.TextBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.txtMarksNOS = New System.Windows.Forms.TextBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.txtHSCode = New System.Windows.Forms.TextBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.txtLCNo = New System.Windows.Forms.TextBox()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.txtDeliveryTerms = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.txtDestination = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.txtExportRegNo = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.txtExchangeRate = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.txtRemarks = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtPaymentCredit = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.txtSalesTax = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtDiscount = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.cmbBank = New System.Windows.Forms.ComboBox()
+        Me.cmbAddress = New System.Windows.Forms.ComboBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.txtRefNo = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmbCurrency = New System.Windows.Forms.ComboBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.cmbPaymentTerm = New System.Windows.Forms.ComboBox()
+        Me.cmbCustomer = New System.Windows.Forms.ComboBox()
+        Me.txtVNo = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.dtpVDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblVID = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.txtSubTotal = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.txtUnitPrice = New System.Windows.Forms.TextBox()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.lblPID = New System.Windows.Forms.Label()
+        Me.lblDID = New System.Windows.Forms.Label()
+        Me.txtQuantity = New System.Windows.Forms.TextBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtVName = New System.Windows.Forms.TextBox()
+        Me.txtVCode = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.VID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProductID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UnitPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DEL = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.IsDel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lblDebitSum = New System.Windows.Forms.Label()
+        Me.lblCreditSum = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.grdGL = New System.Windows.Forms.DataGridView()
+        Me.grdAtt = New System.Windows.Forms.DataGridView()
+        Me.dtFDateFrom = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtFRemarks = New System.Windows.Forms.TextBox()
+        Me.txtFVNo = New System.Windows.Forms.TextBox()
+        Me.dtFDateTo = New System.Windows.Forms.DateTimePicker()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.lblGrandTotal = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.TabMain.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.GBHeading.SuspendLayout()
+        Me.GBFooter.SuspendLayout()
+        Me.GBBody.SuspendLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer2.Panel1.SuspendLayout()
+        Me.SplitContainer2.Panel2.SuspendLayout()
+        Me.SplitContainer2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.grdGL, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.grdAtt, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'TabMain
+        '
+        Me.TabMain.Size = New System.Drawing.Size(1002, 641)
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Size = New System.Drawing.Size(994, 615)
+        '
+        'GBHeading
+        '
+        Me.GBHeading.Margin = New System.Windows.Forms.Padding(2)
+        Me.GBHeading.Size = New System.Drawing.Size(988, 42)
+        '
+        'lblHeading
+        '
+        Me.lblHeading.Size = New System.Drawing.Size(988, 42)
+        Me.lblHeading.TabIndex = 0
+        Me.lblHeading.Text = "Sales Export"
+        '
+        'GBFooter
+        '
+        Me.GBFooter.Controls.Add(Me.lblGrandTotal)
+        Me.GBFooter.Controls.Add(Me.Label25)
+        Me.GBFooter.Controls.Add(Me.Label12)
+        Me.GBFooter.Controls.Add(Me.Label11)
+        Me.GBFooter.Controls.Add(Me.lblCreditSum)
+        Me.GBFooter.Controls.Add(Me.lblDebitSum)
+        Me.GBFooter.Location = New System.Drawing.Point(3, 542)
+        Me.GBFooter.Margin = New System.Windows.Forms.Padding(2)
+        Me.GBFooter.Size = New System.Drawing.Size(988, 70)
+        Me.GBFooter.TabIndex = 0
+        Me.GBFooter.Controls.SetChildIndex(Me.cmdPrint, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.cmdClose, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.cmdNew, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.cmdSave, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.cmdDelete, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.lblDebitSum, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.lblCreditSum, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.Label11, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.Label12, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.Label25, 0)
+        Me.GBFooter.Controls.SetChildIndex(Me.lblGrandTotal, 0)
+        '
+        'cmdClose
+        '
+        Me.cmdClose.TabIndex = 3
+        '
+        'cmdNew
+        '
+        Me.cmdNew.TabIndex = 0
+        '
+        'cmdDelete
+        '
+        Me.cmdDelete.TabIndex = 2
+        '
+        'cmdSave
+        '
+        Me.cmdSave.TabIndex = 1
+        '
+        'GBBody
+        '
+        Me.GBBody.Controls.Add(Me.SplitContainer2)
+        Me.GBBody.Margin = New System.Windows.Forms.Padding(2)
+        Me.GBBody.Size = New System.Drawing.Size(988, 497)
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(2)
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.btnSearch)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.dtFDateTo)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Label16)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.dtFDateFrom)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Label8)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Label14)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Label15)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txtFRemarks)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txtFVNo)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.grdAtt)
+        Me.SplitContainer1.SplitterDistance = 84
+        Me.SplitContainer1.SplitterWidth = 3
+        '
+        'cmdPrint
+        '
+        Me.cmdPrint.TabIndex = 4
+        '
+        'SplitContainer2
+        '
+        Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer2.Name = "SplitContainer2"
+        Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
+        '
+        'SplitContainer2.Panel1
+        '
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbGoodsDescription)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.dtpLCDate)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbShipVia)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtNetWeight)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label42)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtGrossWeight)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label41)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtMarksNOS)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label40)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label39)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtHSCode)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label38)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label37)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtLCNo)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label36)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtDeliveryTerms)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label35)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtDestination)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label34)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtExportRegNo)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label13)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label33)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtExchangeRate)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label29)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label28)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label27)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label26)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.CheckBox1)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtRemarks)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label22)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtPaymentCredit)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label21)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtSalesTax)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label23)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtDiscount)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label10)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label20)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbBank)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbAddress)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label17)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtRefNo)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label4)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbCurrency)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label19)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbPaymentTerm)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.cmbCustomer)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.txtVNo)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label1)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label2)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.dtpVDate)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label3)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label5)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.lblVID)
+        Me.SplitContainer2.Panel1.Controls.Add(Me.GroupBox1)
+        '
+        'SplitContainer2.Panel2
+        '
+        Me.SplitContainer2.Panel2.Controls.Add(Me.DataGridView1)
+        Me.SplitContainer2.Size = New System.Drawing.Size(988, 497)
+        Me.SplitContainer2.SplitterDistance = 312
+        Me.SplitContainer2.TabIndex = 0
+        '
+        'cmbGoodsDescription
+        '
+        Me.cmbGoodsDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbGoodsDescription.FormattingEnabled = True
+        Me.cmbGoodsDescription.Location = New System.Drawing.Point(105, 155)
+        Me.cmbGoodsDescription.Name = "cmbGoodsDescription"
+        Me.cmbGoodsDescription.Size = New System.Drawing.Size(141, 21)
+        Me.cmbGoodsDescription.TabIndex = 107
+        '
+        'dtpLCDate
+        '
+        Me.dtpLCDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpLCDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpLCDate.Location = New System.Drawing.Point(823, 120)
+        Me.dtpLCDate.Name = "dtpLCDate"
+        Me.dtpLCDate.Size = New System.Drawing.Size(141, 20)
+        Me.dtpLCDate.TabIndex = 106
+        '
+        'cmbShipVia
+        '
+        Me.cmbShipVia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbShipVia.FormattingEnabled = True
+        Me.cmbShipVia.Location = New System.Drawing.Point(578, 155)
+        Me.cmbShipVia.Name = "cmbShipVia"
+        Me.cmbShipVia.Size = New System.Drawing.Size(141, 21)
+        Me.cmbShipVia.TabIndex = 105
+        '
+        'txtNetWeight
+        '
+        Me.txtNetWeight.Location = New System.Drawing.Point(343, 193)
+        Me.txtNetWeight.MaxLength = 20
+        Me.txtNetWeight.Name = "txtNetWeight"
+        Me.txtNetWeight.Size = New System.Drawing.Size(141, 20)
+        Me.txtNetWeight.TabIndex = 103
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.ForeColor = System.Drawing.Color.Black
+        Me.Label42.Location = New System.Drawing.Point(275, 196)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(61, 13)
+        Me.Label42.TabIndex = 104
+        Me.Label42.Text = "Net Weight"
+        '
+        'txtGrossWeight
+        '
+        Me.txtGrossWeight.Location = New System.Drawing.Point(105, 193)
+        Me.txtGrossWeight.MaxLength = 20
+        Me.txtGrossWeight.Name = "txtGrossWeight"
+        Me.txtGrossWeight.Size = New System.Drawing.Size(141, 20)
+        Me.txtGrossWeight.TabIndex = 101
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.ForeColor = System.Drawing.Color.Black
+        Me.Label41.Location = New System.Drawing.Point(30, 196)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(71, 13)
+        Me.Label41.TabIndex = 102
+        Me.Label41.Text = "Gross Weight"
+        '
+        'txtMarksNOS
+        '
+        Me.txtMarksNOS.Location = New System.Drawing.Point(823, 155)
+        Me.txtMarksNOS.MaxLength = 20
+        Me.txtMarksNOS.Name = "txtMarksNOS"
+        Me.txtMarksNOS.Size = New System.Drawing.Size(141, 20)
+        Me.txtMarksNOS.TabIndex = 99
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.ForeColor = System.Drawing.Color.Black
+        Me.Label40.Location = New System.Drawing.Point(755, 158)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(62, 13)
+        Me.Label40.TabIndex = 100
+        Me.Label40.Text = "Marks NOS"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.ForeColor = System.Drawing.Color.Black
+        Me.Label39.Location = New System.Drawing.Point(526, 158)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(46, 13)
+        Me.Label39.TabIndex = 98
+        Me.Label39.Text = "Ship Via"
+        '
+        'txtHSCode
+        '
+        Me.txtHSCode.Location = New System.Drawing.Point(343, 155)
+        Me.txtHSCode.MaxLength = 20
+        Me.txtHSCode.Name = "txtHSCode"
+        Me.txtHSCode.Size = New System.Drawing.Size(141, 20)
+        Me.txtHSCode.TabIndex = 95
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.ForeColor = System.Drawing.Color.Black
+        Me.Label38.Location = New System.Drawing.Point(286, 158)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(50, 13)
+        Me.Label38.TabIndex = 96
+        Me.Label38.Text = "HS Code"
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.ForeColor = System.Drawing.Color.Black
+        Me.Label37.Location = New System.Drawing.Point(771, 127)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(46, 13)
+        Me.Label37.TabIndex = 94
+        Me.Label37.Text = "LC Date"
+        '
+        'txtLCNo
+        '
+        Me.txtLCNo.Location = New System.Drawing.Point(578, 120)
+        Me.txtLCNo.MaxLength = 20
+        Me.txtLCNo.Name = "txtLCNo"
+        Me.txtLCNo.Size = New System.Drawing.Size(141, 20)
+        Me.txtLCNo.TabIndex = 91
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.ForeColor = System.Drawing.Color.Black
+        Me.Label36.Location = New System.Drawing.Point(535, 127)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(37, 13)
+        Me.Label36.TabIndex = 92
+        Me.Label36.Text = "LC No"
+        '
+        'txtDeliveryTerms
+        '
+        Me.txtDeliveryTerms.Location = New System.Drawing.Point(343, 120)
+        Me.txtDeliveryTerms.MaxLength = 20
+        Me.txtDeliveryTerms.Name = "txtDeliveryTerms"
+        Me.txtDeliveryTerms.Size = New System.Drawing.Size(141, 20)
+        Me.txtDeliveryTerms.TabIndex = 89
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.ForeColor = System.Drawing.Color.Black
+        Me.Label35.Location = New System.Drawing.Point(259, 127)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(77, 13)
+        Me.Label35.TabIndex = 90
+        Me.Label35.Text = "Delivery Terms"
+        '
+        'txtDestination
+        '
+        Me.txtDestination.Location = New System.Drawing.Point(105, 120)
+        Me.txtDestination.MaxLength = 20
+        Me.txtDestination.Name = "txtDestination"
+        Me.txtDestination.Size = New System.Drawing.Size(141, 20)
+        Me.txtDestination.TabIndex = 87
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.ForeColor = System.Drawing.Color.Black
+        Me.Label34.Location = New System.Drawing.Point(41, 127)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(60, 13)
+        Me.Label34.TabIndex = 88
+        Me.Label34.Text = "Destination"
+        '
+        'txtExportRegNo
+        '
+        Me.txtExportRegNo.Location = New System.Drawing.Point(823, 82)
+        Me.txtExportRegNo.MaxLength = 20
+        Me.txtExportRegNo.Name = "txtExportRegNo"
+        Me.txtExportRegNo.Size = New System.Drawing.Size(141, 20)
+        Me.txtExportRegNo.TabIndex = 85
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.Color.Black
+        Me.Label13.Location = New System.Drawing.Point(743, 86)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(74, 13)
+        Me.Label13.TabIndex = 86
+        Me.Label13.Text = "Export RegNo"
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.ForeColor = System.Drawing.Color.Black
+        Me.Label33.Location = New System.Drawing.Point(736, 18)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(81, 13)
+        Me.Label33.TabIndex = 84
+        Me.Label33.Text = "Exchange Rate"
+        '
+        'txtExchangeRate
+        '
+        Me.txtExchangeRate.Location = New System.Drawing.Point(823, 14)
+        Me.txtExchangeRate.MaxLength = 50
+        Me.txtExchangeRate.Name = "txtExchangeRate"
+        Me.txtExchangeRate.Size = New System.Drawing.Size(141, 20)
+        Me.txtExchangeRate.TabIndex = 83
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.Color.Black
+        Me.Label29.Location = New System.Drawing.Point(484, 49)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(15, 20)
+        Me.Label29.TabIndex = 69
+        Me.Label29.Text = "*"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.ForeColor = System.Drawing.Color.Black
+        Me.Label28.Location = New System.Drawing.Point(719, 17)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(15, 20)
+        Me.Label28.TabIndex = 68
+        Me.Label28.Text = "*"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.ForeColor = System.Drawing.Color.Black
+        Me.Label27.Location = New System.Drawing.Point(246, 49)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(15, 20)
+        Me.Label27.TabIndex = 67
+        Me.Label27.Text = "*"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.ForeColor = System.Drawing.Color.Black
+        Me.Label26.Location = New System.Drawing.Point(246, 86)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(15, 20)
+        Me.Label26.TabIndex = 66
+        Me.Label26.Text = "*"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(578, 196)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(59, 17)
+        Me.CheckBox1.TabIndex = 11
+        Me.CheckBox1.Text = "Cancel"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'txtRemarks
+        '
+        Me.txtRemarks.Location = New System.Drawing.Point(105, 228)
+        Me.txtRemarks.MaxLength = 20
+        Me.txtRemarks.Name = "txtRemarks"
+        Me.txtRemarks.Size = New System.Drawing.Size(595, 20)
+        Me.txtRemarks.TabIndex = 12
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.ForeColor = System.Drawing.Color.Black
+        Me.Label22.Location = New System.Drawing.Point(40, 231)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(61, 13)
+        Me.Label22.TabIndex = 65
+        Me.Label22.Text = "Instructions"
+        '
+        'txtPaymentCredit
+        '
+        Me.txtPaymentCredit.Location = New System.Drawing.Point(578, 82)
+        Me.txtPaymentCredit.MaxLength = 20
+        Me.txtPaymentCredit.Name = "txtPaymentCredit"
+        Me.txtPaymentCredit.Size = New System.Drawing.Size(141, 20)
+        Me.txtPaymentCredit.TabIndex = 10
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.ForeColor = System.Drawing.Color.Black
+        Me.Label21.Location = New System.Drawing.Point(494, 86)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(78, 13)
+        Me.Label21.TabIndex = 63
+        Me.Label21.Text = "Payment Credit"
+        '
+        'txtSalesTax
+        '
+        Me.txtSalesTax.Location = New System.Drawing.Point(823, 51)
+        Me.txtSalesTax.MaxLength = 20
+        Me.txtSalesTax.Name = "txtSalesTax"
+        Me.txtSalesTax.Size = New System.Drawing.Size(141, 20)
+        Me.txtSalesTax.TabIndex = 7
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.ForeColor = System.Drawing.Color.Black
+        Me.Label23.Location = New System.Drawing.Point(755, 55)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(62, 13)
+        Me.Label23.TabIndex = 61
+        Me.Label23.Text = "Sales Tax%"
+        '
+        'txtDiscount
+        '
+        Me.txtDiscount.Location = New System.Drawing.Point(578, 49)
+        Me.txtDiscount.MaxLength = 20
+        Me.txtDiscount.Name = "txtDiscount"
+        Me.txtDiscount.Size = New System.Drawing.Size(141, 20)
+        Me.txtDiscount.TabIndex = 8
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(523, 53)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(49, 13)
+        Me.Label10.TabIndex = 59
+        Me.Label10.Text = "Discount"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.ForeColor = System.Drawing.Color.Black
+        Me.Label20.Location = New System.Drawing.Point(69, 86)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(32, 13)
+        Me.Label20.TabIndex = 57
+        Me.Label20.Text = "Bank"
+        '
+        'cmbBank
+        '
+        Me.cmbBank.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbBank.FormattingEnabled = True
+        Me.cmbBank.Location = New System.Drawing.Point(105, 82)
+        Me.cmbBank.Name = "cmbBank"
+        Me.cmbBank.Size = New System.Drawing.Size(141, 21)
+        Me.cmbBank.TabIndex = 4
+        '
+        'cmbAddress
+        '
+        Me.cmbAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbAddress.FormattingEnabled = True
+        Me.cmbAddress.Location = New System.Drawing.Point(6, 17)
+        Me.cmbAddress.Name = "cmbAddress"
+        Me.cmbAddress.Size = New System.Drawing.Size(10, 21)
+        Me.cmbAddress.TabIndex = 3
+        Me.cmbAddress.Visible = False
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.ForeColor = System.Drawing.Color.Black
+        Me.Label17.Location = New System.Drawing.Point(523, 17)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(49, 13)
+        Me.Label17.TabIndex = 55
+        Me.Label17.Text = "Currency"
+        '
+        'txtRefNo
+        '
+        Me.txtRefNo.Location = New System.Drawing.Point(343, 82)
+        Me.txtRefNo.MaxLength = 20
+        Me.txtRefNo.Name = "txtRefNo"
+        Me.txtRefNo.Size = New System.Drawing.Size(141, 20)
+        Me.txtRefNo.TabIndex = 9
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(292, 86)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.TabIndex = 53
+        Me.Label4.Text = "Ref. No"
+        '
+        'cmbCurrency
+        '
+        Me.cmbCurrency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCurrency.FormattingEnabled = True
+        Me.cmbCurrency.Location = New System.Drawing.Point(578, 14)
+        Me.cmbCurrency.Name = "cmbCurrency"
+        Me.cmbCurrency.Size = New System.Drawing.Size(141, 21)
+        Me.cmbCurrency.TabIndex = 6
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.ForeColor = System.Drawing.Color.Black
+        Me.Label19.Location = New System.Drawing.Point(21, 49)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(80, 13)
+        Me.Label19.TabIndex = 42
+        Me.Label19.Text = "Payment Terms"
+        '
+        'cmbPaymentTerm
+        '
+        Me.cmbPaymentTerm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbPaymentTerm.FormattingEnabled = True
+        Me.cmbPaymentTerm.Location = New System.Drawing.Point(105, 46)
+        Me.cmbPaymentTerm.Name = "cmbPaymentTerm"
+        Me.cmbPaymentTerm.Size = New System.Drawing.Size(141, 21)
+        Me.cmbPaymentTerm.TabIndex = 5
+        '
+        'cmbCustomer
+        '
+        Me.cmbCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCustomer.FormattingEnabled = True
+        Me.cmbCustomer.Location = New System.Drawing.Point(343, 46)
+        Me.cmbCustomer.Name = "cmbCustomer"
+        Me.cmbCustomer.Size = New System.Drawing.Size(141, 21)
+        Me.cmbCustomer.TabIndex = 2
+        '
+        'txtVNo
+        '
+        Me.txtVNo.Location = New System.Drawing.Point(105, 11)
+        Me.txtVNo.MaxLength = 8
+        Me.txtVNo.Name = "txtVNo"
+        Me.txtVNo.ReadOnly = True
+        Me.txtVNo.Size = New System.Drawing.Size(141, 20)
+        Me.txtVNo.TabIndex = 0
+        Me.txtVNo.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(7, 158)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(94, 13)
+        Me.Label1.TabIndex = 31
+        Me.Label1.Text = "Goods Description"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.Location = New System.Drawing.Point(268, 13)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(68, 13)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Invoice Date"
+        '
+        'dtpVDate
+        '
+        Me.dtpVDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpVDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpVDate.Location = New System.Drawing.Point(343, 11)
+        Me.dtpVDate.Name = "dtpVDate"
+        Me.dtpVDate.Size = New System.Drawing.Size(141, 20)
+        Me.dtpVDate.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(42, 13)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(59, 13)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Invoice No"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(285, 48)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 13)
+        Me.Label5.TabIndex = 27
+        Me.Label5.Text = "Customer"
+        '
+        'lblVID
+        '
+        Me.lblVID.AutoSize = True
+        Me.lblVID.Location = New System.Drawing.Point(2, 3)
+        Me.lblVID.Name = "lblVID"
+        Me.lblVID.Size = New System.Drawing.Size(25, 13)
+        Me.lblVID.TabIndex = 0
+        Me.lblVID.Text = "VID"
+        Me.lblVID.Visible = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label32)
+        Me.GroupBox1.Controls.Add(Me.Label30)
+        Me.GroupBox1.Controls.Add(Me.txtSubTotal)
+        Me.GroupBox1.Controls.Add(Me.Label24)
+        Me.GroupBox1.Controls.Add(Me.txtUnitPrice)
+        Me.GroupBox1.Controls.Add(Me.btnClear)
+        Me.GroupBox1.Controls.Add(Me.lblPID)
+        Me.GroupBox1.Controls.Add(Me.lblDID)
+        Me.GroupBox1.Controls.Add(Me.txtQuantity)
+        Me.GroupBox1.Controls.Add(Me.btnAdd)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.txtVName)
+        Me.GroupBox1.Controls.Add(Me.txtVCode)
+        Me.GroupBox1.Controls.Add(Me.Label31)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 251)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(980, 56)
+        Me.GroupBox1.TabIndex = 13
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Detail"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.ForeColor = System.Drawing.Color.Black
+        Me.Label32.Location = New System.Drawing.Point(767, 30)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(15, 20)
+        Me.Label32.TabIndex = 49
+        Me.Label32.Text = "*"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.Black
+        Me.Label30.Location = New System.Drawing.Point(125, 32)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(15, 20)
+        Me.Label30.TabIndex = 47
+        Me.Label30.Text = "*"
+        '
+        'txtSubTotal
+        '
+        Me.txtSubTotal.Location = New System.Drawing.Point(783, 29)
+        Me.txtSubTotal.Name = "txtSubTotal"
+        Me.txtSubTotal.ReadOnly = True
+        Me.txtSubTotal.Size = New System.Drawing.Size(72, 20)
+        Me.txtSubTotal.TabIndex = 4
+        Me.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(780, 13)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(56, 13)
+        Me.Label24.TabIndex = 38
+        Me.Label24.Text = "Sub Total:"
+        '
+        'txtUnitPrice
+        '
+        Me.txtUnitPrice.Location = New System.Drawing.Point(605, 29)
+        Me.txtUnitPrice.Name = "txtUnitPrice"
+        Me.txtUnitPrice.Size = New System.Drawing.Size(72, 20)
+        Me.txtUnitPrice.TabIndex = 2
+        Me.txtUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(926, 27)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(48, 23)
+        Me.btnClear.TabIndex = 6
+        Me.btnClear.Text = "Cancel"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'lblPID
+        '
+        Me.lblPID.AutoSize = True
+        Me.lblPID.Location = New System.Drawing.Point(0, 16)
+        Me.lblPID.Name = "lblPID"
+        Me.lblPID.Size = New System.Drawing.Size(25, 13)
+        Me.lblPID.TabIndex = 36
+        Me.lblPID.Text = "PID"
+        Me.lblPID.Visible = False
+        '
+        'lblDID
+        '
+        Me.lblDID.AutoSize = True
+        Me.lblDID.Location = New System.Drawing.Point(0, 29)
+        Me.lblDID.Name = "lblDID"
+        Me.lblDID.Size = New System.Drawing.Size(13, 13)
+        Me.lblDID.TabIndex = 35
+        Me.lblDID.Text = "0"
+        Me.lblDID.Visible = False
+        '
+        'txtQuantity
+        '
+        Me.txtQuantity.Location = New System.Drawing.Point(695, 29)
+        Me.txtQuantity.Name = "txtQuantity"
+        Me.txtQuantity.Size = New System.Drawing.Size(72, 20)
+        Me.txtQuantity.TabIndex = 3
+        Me.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Location = New System.Drawing.Point(872, 27)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(48, 23)
+        Me.btnAdd.TabIndex = 5
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(30, 13)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(64, 13)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Order Code:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(692, 13)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(49, 13)
+        Me.Label9.TabIndex = 7
+        Me.Label9.Text = "Quantity:"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(602, 13)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(56, 13)
+        Me.Label18.TabIndex = 5
+        Me.Label18.Text = "Unit Price:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(137, 13)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(63, 13)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "Description:"
+        '
+        'txtVName
+        '
+        Me.txtVName.Location = New System.Drawing.Point(140, 29)
+        Me.txtVName.Name = "txtVName"
+        Me.txtVName.ReadOnly = True
+        Me.txtVName.Size = New System.Drawing.Size(459, 20)
+        Me.txtVName.TabIndex = 1
+        Me.txtVName.TabStop = False
+        '
+        'txtVCode
+        '
+        Me.txtVCode.Location = New System.Drawing.Point(33, 29)
+        Me.txtVCode.Name = "txtVCode"
+        Me.txtVCode.ReadOnly = True
+        Me.txtVCode.Size = New System.Drawing.Size(92, 20)
+        Me.txtVCode.TabIndex = 0
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.Color.Black
+        Me.Label31.Location = New System.Drawing.Point(675, 30)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(15, 20)
+        Me.Label31.TabIndex = 48
+        Me.Label31.Text = "*"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VID, Me.ProductID, Me.VCode, Me.VName, Me.UnitPrice, Me.Quantity, Me.Amount, Me.DEL, Me.IsDel})
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(988, 181)
+        Me.DataGridView1.TabIndex = 0
+        Me.DataGridView1.TabStop = False
+        '
+        'VID
+        '
+        Me.VID.HeaderText = "VID"
+        Me.VID.Name = "VID"
+        Me.VID.ReadOnly = True
+        Me.VID.Visible = False
+        '
+        'ProductID
+        '
+        Me.ProductID.HeaderText = "PID"
+        Me.ProductID.Name = "ProductID"
+        Me.ProductID.ReadOnly = True
+        Me.ProductID.Visible = False
+        '
+        'VCode
+        '
+        Me.VCode.HeaderText = "Order Code"
+        Me.VCode.Name = "VCode"
+        Me.VCode.ReadOnly = True
+        Me.VCode.Width = 120
+        '
+        'VName
+        '
+        Me.VName.HeaderText = "Description"
+        Me.VName.Name = "VName"
+        Me.VName.ReadOnly = True
+        Me.VName.Width = 500
+        '
+        'UnitPrice
+        '
+        Me.UnitPrice.HeaderText = "Unit Price"
+        Me.UnitPrice.Name = "UnitPrice"
+        Me.UnitPrice.ReadOnly = True
+        Me.UnitPrice.Width = 80
+        '
+        'Quantity
+        '
+        Me.Quantity.HeaderText = "Quantity"
+        Me.Quantity.Name = "Quantity"
+        Me.Quantity.ReadOnly = True
+        Me.Quantity.Width = 80
+        '
+        'Amount
+        '
+        Me.Amount.HeaderText = "Sub Total"
+        Me.Amount.Name = "Amount"
+        Me.Amount.ReadOnly = True
+        Me.Amount.Width = 80
+        '
+        'DEL
+        '
+        Me.DEL.HeaderText = "DEL"
+        Me.DEL.Image = Global.WinBusiness.My.Resources.Resources.icExitForm
+        Me.DEL.Name = "DEL"
+        Me.DEL.ReadOnly = True
+        Me.DEL.Width = 50
+        '
+        'IsDel
+        '
+        Me.IsDel.HeaderText = "IsDel"
+        Me.IsDel.Name = "IsDel"
+        Me.IsDel.ReadOnly = True
+        Me.IsDel.Visible = False
+        '
+        'lblDebitSum
+        '
+        Me.lblDebitSum.AutoSize = True
+        Me.lblDebitSum.Location = New System.Drawing.Point(783, 6)
+        Me.lblDebitSum.Name = "lblDebitSum"
+        Me.lblDebitSum.Size = New System.Drawing.Size(13, 13)
+        Me.lblDebitSum.TabIndex = 6
+        Me.lblDebitSum.Text = "0"
+        Me.lblDebitSum.Visible = False
+        '
+        'lblCreditSum
+        '
+        Me.lblCreditSum.AutoSize = True
+        Me.lblCreditSum.Location = New System.Drawing.Point(919, 6)
+        Me.lblCreditSum.Name = "lblCreditSum"
+        Me.lblCreditSum.Size = New System.Drawing.Size(13, 13)
+        Me.lblCreditSum.TabIndex = 8
+        Me.lblCreditSum.Text = "0"
+        Me.lblCreditSum.Visible = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(732, 6)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(51, 13)
+        Me.Label11.TabIndex = 5
+        Me.Label11.Text = "Total Dr: "
+        Me.Label11.Visible = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(862, 6)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(50, 13)
+        Me.Label12.TabIndex = 7
+        Me.Label12.Text = "Total Cr: "
+        Me.Label12.Visible = False
+        '
+        'grdGL
+        '
+        Me.grdGL.AllowUserToAddRows = False
+        Me.grdGL.AllowUserToDeleteRows = False
+        Me.grdGL.AllowUserToOrderColumns = True
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grdGL.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.grdGL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdGL.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdGL.Location = New System.Drawing.Point(0, 0)
+        Me.grdGL.Name = "grdGL"
+        Me.grdGL.ReadOnly = True
+        Me.grdGL.RowHeadersVisible = False
+        Me.grdGL.Size = New System.Drawing.Size(953, 401)
+        Me.grdGL.TabIndex = 3
+        '
+        'grdAtt
+        '
+        Me.grdAtt.AllowUserToAddRows = False
+        Me.grdAtt.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.grdAtt.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.grdAtt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grdAtt.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grdAtt.Location = New System.Drawing.Point(0, 0)
+        Me.grdAtt.Name = "grdAtt"
+        Me.grdAtt.RowHeadersVisible = False
+        Me.grdAtt.Size = New System.Drawing.Size(953, 404)
+        Me.grdAtt.TabIndex = 0
+        '
+        'dtFDateFrom
+        '
+        Me.dtFDateFrom.CustomFormat = "dd/MM/yyyy"
+        Me.dtFDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtFDateFrom.Location = New System.Drawing.Point(511, 8)
+        Me.dtFDateFrom.Name = "dtFDateFrom"
+        Me.dtFDateFrom.Size = New System.Drawing.Size(104, 20)
+        Me.dtFDateFrom.TabIndex = 5
+        '
+        'Label8
+        '
+        Me.Label8.Location = New System.Drawing.Point(15, 44)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(58, 13)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = "Remarks:"
+        '
+        'Label14
+        '
+        Me.Label14.Location = New System.Drawing.Point(438, 12)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(67, 13)
+        Me.Label14.TabIndex = 4
+        Me.Label14.Text = "Date From:"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(15, 11)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(62, 13)
+        Me.Label15.TabIndex = 0
+        Me.Label15.Text = "Invoice No:"
+        '
+        'txtFRemarks
+        '
+        Me.txtFRemarks.Location = New System.Drawing.Point(83, 39)
+        Me.txtFRemarks.Name = "txtFRemarks"
+        Me.txtFRemarks.Size = New System.Drawing.Size(728, 20)
+        Me.txtFRemarks.TabIndex = 9
+        '
+        'txtFVNo
+        '
+        Me.txtFVNo.Location = New System.Drawing.Point(83, 11)
+        Me.txtFVNo.Name = "txtFVNo"
+        Me.txtFVNo.Size = New System.Drawing.Size(278, 20)
+        Me.txtFVNo.TabIndex = 1
+        '
+        'dtFDateTo
+        '
+        Me.dtFDateTo.CustomFormat = "dd/MM/yyyy"
+        Me.dtFDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtFDateTo.Location = New System.Drawing.Point(707, 7)
+        Me.dtFDateTo.Name = "dtFDateTo"
+        Me.dtFDateTo.Size = New System.Drawing.Size(104, 20)
+        Me.dtFDateTo.TabIndex = 7
+        '
+        'Label16
+        '
+        Me.Label16.Location = New System.Drawing.Point(634, 11)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(67, 13)
+        Me.Label16.TabIndex = 6
+        Me.Label16.Text = "Date To:"
+        '
+        'btnSearch
+        '
+        Me.btnSearch.Location = New System.Drawing.Point(844, 39)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearch.TabIndex = 10
+        Me.btnSearch.Text = "Search"
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
+        'lblGrandTotal
+        '
+        Me.lblGrandTotal.AutoSize = True
+        Me.lblGrandTotal.ForeColor = System.Drawing.Color.Black
+        Me.lblGrandTotal.Location = New System.Drawing.Point(821, 28)
+        Me.lblGrandTotal.Name = "lblGrandTotal"
+        Me.lblGrandTotal.Size = New System.Drawing.Size(13, 13)
+        Me.lblGrandTotal.TabIndex = 35
+        Me.lblGrandTotal.Text = "0"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.ForeColor = System.Drawing.Color.Black
+        Me.Label25.Location = New System.Drawing.Point(749, 28)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(66, 13)
+        Me.Label25.TabIndex = 34
+        Me.Label25.Text = "Grand Total:"
+        '
+        'frmSaleInvoiceExport
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1002, 641)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "frmSaleInvoiceExport"
+        Me.Text = "Sales Export"
+        Me.TabMain.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.GBHeading.ResumeLayout(False)
+        Me.GBFooter.ResumeLayout(False)
+        Me.GBFooter.PerformLayout()
+        Me.GBBody.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.PerformLayout()
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
+        Me.SplitContainer2.Panel1.ResumeLayout(False)
+        Me.SplitContainer2.Panel1.PerformLayout()
+        Me.SplitContainer2.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer2.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.grdGL, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.grdAtt, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents SplitContainer2 As System.Windows.Forms.SplitContainer
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents txtVCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtVName As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents txtQuantity As System.Windows.Forms.TextBox
+    Friend WithEvents lblDebitSum As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents lblCreditSum As System.Windows.Forms.Label
+    Friend WithEvents lblVID As System.Windows.Forms.Label
+    Friend WithEvents grdGL As System.Windows.Forms.DataGridView
+    Friend WithEvents grdAtt As System.Windows.Forms.DataGridView
+    Friend WithEvents dtFDateTo As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents dtFDateFrom As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents txtFRemarks As System.Windows.Forms.TextBox
+    Friend WithEvents txtFVNo As System.Windows.Forms.TextBox
+    Friend WithEvents btnSearch As System.Windows.Forms.Button
+    Friend WithEvents cmbCustomer As ComboBox
+    Friend WithEvents txtVNo As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents dtpVDate As DateTimePicker
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents lblDID As Label
+    Friend WithEvents lblPID As Label
+    Friend WithEvents btnClear As Button
+    Friend WithEvents Label19 As Label
+    Friend WithEvents cmbPaymentTerm As ComboBox
+    Friend WithEvents cmbCurrency As ComboBox
+    Friend WithEvents txtUnitPrice As TextBox
+    Friend WithEvents txtRefNo As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents cmbBank As ComboBox
+    Friend WithEvents cmbAddress As ComboBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents txtSalesTax As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents txtDiscount As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents txtPaymentCredit As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtRemarks As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents txtSubTotal As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents lblGrandTotal As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label33 As Label
+    Friend WithEvents txtExchangeRate As TextBox
+    Friend WithEvents txtExportRegNo As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents txtDestination As TextBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents txtMarksNOS As TextBox
+    Friend WithEvents Label40 As Label
+    Friend WithEvents Label39 As Label
+    Friend WithEvents txtHSCode As TextBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents txtLCNo As TextBox
+    Friend WithEvents Label36 As Label
+    Friend WithEvents txtDeliveryTerms As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents txtNetWeight As TextBox
+    Friend WithEvents Label42 As Label
+    Friend WithEvents txtGrossWeight As TextBox
+    Friend WithEvents Label41 As Label
+    Friend WithEvents cmbShipVia As ComboBox
+    Friend WithEvents cmbGoodsDescription As ComboBox
+    Friend WithEvents dtpLCDate As DateTimePicker
+    Friend WithEvents VID As DataGridViewTextBoxColumn
+    Friend WithEvents ProductID As DataGridViewTextBoxColumn
+    Friend WithEvents VCode As DataGridViewTextBoxColumn
+    Friend WithEvents VName As DataGridViewTextBoxColumn
+    Friend WithEvents UnitPrice As DataGridViewTextBoxColumn
+    Friend WithEvents Quantity As DataGridViewTextBoxColumn
+    Friend WithEvents Amount As DataGridViewTextBoxColumn
+    Friend WithEvents DEL As DataGridViewImageColumn
+    Friend WithEvents IsDel As DataGridViewTextBoxColumn
+End Class
